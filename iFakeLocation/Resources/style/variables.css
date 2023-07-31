@@ -1,0 +1,207 @@
+/* Base styles and variables */
+:root {
+  font-size: 62.5%;
+  --fs: 1.6rem;
+
+  --interactible-padding: 0.6rem 0.8rem;
+  --interactible-radius: 0px;
+
+  --gutter-xxs: 0.4rem;
+  --gutter-xs:  0.6rem;
+  --gutter-s:   0.8rem;
+  --gutter:     1rem;
+  --gutter-l:   2rem;
+}
+
+/* Theme colours */
+html {
+  --theme-white: 230, 230, 230;
+  --theme-dark-grey: 42, 42, 42;
+  --theme-colour-main: #cceebb;
+  --theme-colour-main-shade: #646f4b;
+  --theme-colour-alt: #7bb2d9;
+  --theme-colour-alt-shade: #3a56b3;
+  --theme-colour-sub: #46351d;
+
+  --theme-bg: #cceebb;
+  --theme-text: #46351d;
+  --theme-text-label: #cceebb;
+  --theme-input: #646f4b;
+  --theme-button: #3a56b3;
+  --theme-button-alt: #7bb2d9;
+}
+
+html.dark {
+  --theme-bg: #46351d;
+  --theme-text: #cceebb;
+  --theme-text-label: #cceebb;
+  --theme-input: #646f4b;
+  --theme-button: #3a56b3;
+  --theme-button-alt: #7bb2d9;
+}
+
+html, html * {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: var(--fs);
+}
+
+body, body small, body p, body pre, body code, body label, dialog, .modal-content {
+  background: var(--theme-bg);
+  color: var(--theme-text);
+}
+
+hr, .modal-header, .modal-body, .modal-footer {
+  border-color: var(--theme-input);
+  width: 100%;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--theme-text);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2.5rem;
+}
+
+h6 {
+  font-size: 2rem;
+}
+
+p, ul {
+  margin: 0;
+}
+
+/* Animations */
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% { border-image: conic-gradient(from 0.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  1% { border-image: conic-gradient(from 3.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  2% { border-image: conic-gradient(from 7.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  3% { border-image: conic-gradient(from 10.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  4% { border-image: conic-gradient(from 14.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  5% { border-image: conic-gradient(from 18.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  6% { border-image: conic-gradient(from 21.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  7% { border-image: conic-gradient(from 25.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  8% { border-image: conic-gradient(from 28.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  9% { border-image: conic-gradient(from 32.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  10% { border-image: conic-gradient(from 36.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  11% { border-image: conic-gradient(from 39.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  12% { border-image: conic-gradient(from 43.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  13% { border-image: conic-gradient(from 46.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  14% { border-image: conic-gradient(from 50.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  15% { border-image: conic-gradient(from 54.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  16% { border-image: conic-gradient(from 57.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  17% { border-image: conic-gradient(from 61.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  18% { border-image: conic-gradient(from 64.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  19% { border-image: conic-gradient(from 68.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  20% { border-image: conic-gradient(from 72.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  21% { border-image: conic-gradient(from 75.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  22% { border-image: conic-gradient(from 79.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  23% { border-image: conic-gradient(from 82.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  24% { border-image: conic-gradient(from 86.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  25% { border-image: conic-gradient(from 90.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  26% { border-image: conic-gradient(from 93.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  27% { border-image: conic-gradient(from 97.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  28% { border-image: conic-gradient(from 100.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  29% { border-image: conic-gradient(from 104.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  30% { border-image: conic-gradient(from 108.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  31% { border-image: conic-gradient(from 111.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  32% { border-image: conic-gradient(from 115.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  33% { border-image: conic-gradient(from 118.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  34% { border-image: conic-gradient(from 122.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  35% { border-image: conic-gradient(from 126.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  36% { border-image: conic-gradient(from 129.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  37% { border-image: conic-gradient(from 133.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  38% { border-image: conic-gradient(from 136.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  39% { border-image: conic-gradient(from 140.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  40% { border-image: conic-gradient(from 144.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  41% { border-image: conic-gradient(from 147.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  42% { border-image: conic-gradient(from 151.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  43% { border-image: conic-gradient(from 154.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  44% { border-image: conic-gradient(from 158.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  45% { border-image: conic-gradient(from 162.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  46% { border-image: conic-gradient(from 165.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  47% { border-image: conic-gradient(from 169.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  48% { border-image: conic-gradient(from 172.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  49% { border-image: conic-gradient(from 176.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  50% { border-image: conic-gradient(from 180.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  51% { border-image: conic-gradient(from 183.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  52% { border-image: conic-gradient(from 187.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  53% { border-image: conic-gradient(from 190.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  54% { border-image: conic-gradient(from 194.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  55% { border-image: conic-gradient(from 198.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  56% { border-image: conic-gradient(from 201.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  57% { border-image: conic-gradient(from 205.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  58% { border-image: conic-gradient(from 208.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  59% { border-image: conic-gradient(from 212.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  60% { border-image: conic-gradient(from 216.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  61% { border-image: conic-gradient(from 219.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  62% { border-image: conic-gradient(from 223.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  63% { border-image: conic-gradient(from 226.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  64% { border-image: conic-gradient(from 230.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  65% { border-image: conic-gradient(from 234.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  66% { border-image: conic-gradient(from 237.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  67% { border-image: conic-gradient(from 241.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  68% { border-image: conic-gradient(from 244.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  69% { border-image: conic-gradient(from 248.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  70% { border-image: conic-gradient(from 252.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  71% { border-image: conic-gradient(from 255.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  72% { border-image: conic-gradient(from 259.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  73% { border-image: conic-gradient(from 262.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  74% { border-image: conic-gradient(from 266.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  75% { border-image: conic-gradient(from 270.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  76% { border-image: conic-gradient(from 273.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  77% { border-image: conic-gradient(from 277.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  78% { border-image: conic-gradient(from 280.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  79% { border-image: conic-gradient(from 284.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  80% { border-image: conic-gradient(from 288.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  81% { border-image: conic-gradient(from 291.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  82% { border-image: conic-gradient(from 295.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  83% { border-image: conic-gradient(from 298.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  84% { border-image: conic-gradient(from 302.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  85% { border-image: conic-gradient(from 306.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  86% { border-image: conic-gradient(from 309.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  87% { border-image: conic-gradient(from 313.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  88% { border-image: conic-gradient(from 316.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  89% { border-image: conic-gradient(from 320.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  90% { border-image: conic-gradient(from 324.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  91% { border-image: conic-gradient(from 327.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  92% { border-image: conic-gradient(from 331.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  93% { border-image: conic-gradient(from 334.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  94% { border-image: conic-gradient(from 338.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  95% { border-image: conic-gradient(from 342.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  96% { border-image: conic-gradient(from 345.60deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  97% { border-image: conic-gradient(from 349.20deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  98% { border-image: conic-gradient(from 352.80deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  99% { border-image: conic-gradient(from 356.40deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+  100% { border-image: conic-gradient(from 360.00deg,  aqua, aquamarine, lime, aqua, aqua) 1; }
+}

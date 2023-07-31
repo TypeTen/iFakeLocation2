@@ -1,0 +1,15 @@
+header {
+  border-bottom: 2px solid var(--theme-text);
+  display: flex;
+  flex-flow: row wrap;
+  padding: var(--gutter-s) 0;
+  margin-bottom: var(--gutter-l);
+}
+
+header .heading {
+  margin: auto auto auto 0;
+}
+
+header .button {
+  margin-left: var(--gutter);
+}

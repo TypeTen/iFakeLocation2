@@ -1,0 +1,99 @@
+input, select, textarea {
+  background: var(--theme-input);
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--theme-text-label);
+  border: 2px solid var(--theme-input);
+  border-radius: var(--interactible-radius);
+  outline: none;
+  min-height: 3.4rem;
+  padding: var(--interactible-padding);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+}
+
+input::placeholder {
+  color: var(--theme-text-label);
+}
+
+input:active, select:active, textarea:active, button:active,
+input:focus, select:focus, textarea:focus, button:focus {
+  box-shadow: none;
+  border: 2px solid var(--theme-text);
+  outline: none;
+}
+
+input:disabled, select:disabled, textarea:disabled, button:disabled {
+  color: var(--theme-text-label);
+  cursor: not-allowed;
+  pointer-events: all;
+}
+
+[type="file"] {
+  flex: 1 1 calc(100% - 16rem);
+  align-items: center;
+  width: auto;
+  margin-left: var(--gutter);
+}
+
+[type="file"]::file-selector-button {
+  background-color: transparent;
+  border: none;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid var(--theme-text-label);
+  padding: 0;
+  margin: 0 var(--gutter) -2px 0;
+  line-height: 1;
+  color: var(--theme-text-label);
+  max-width: 30rem;;
+}
+
+[type="text"] {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><g class="search-path" fill="none" stroke="%23dcffdc"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>');
+  background-position: right .75rem center;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+}
+
+.form__simple {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-bottom: var(--gutter-xs);
+}
+
+.form__simple .form--input {
+  flex: 1 1 auto;
+}
+
+.form__simple--headed label {
+  flex: 1 0 100%;
+  width: 100%;
+}
+
+.form__simple button, .form__simple--headed button {
+  margin-left: var(--gutter);
+}
+
+.custom-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23dcffdc' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+  background-position: right .75rem center;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-color: var(--theme-input);
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--theme-text-label);
+  border: 2px solid var(--theme-input);
+  border-radius: var(--interactible-radius);
+  flex: 1 0 calc(100% - 16rem);
+  width: auto;
+}
+
+.custom-select:active, .custom-select:focus, .custom-select:focus-within {
+  box-shadow: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%2346351d' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+  border: 2px solid var(--theme-text);
+}

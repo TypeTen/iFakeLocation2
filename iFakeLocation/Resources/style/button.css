@@ -1,0 +1,54 @@
+button, a.button {
+  background: var(--theme-input);
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--theme-text-label);
+  border: 2px solid var(--theme-input);
+  border-radius: var(--interactible-radius);
+  outline: none;
+  min-height: 3.4rem;
+  padding: var(--interactible-padding);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+}
+
+.button, a.button {
+  text-align: center;
+  min-width: 15rem;
+  position: relative;
+}
+
+button:active, a.button:active,
+button:focus, a.button:focus {
+  box-shadow: none;
+  border: 2px solid var(--theme-text);
+  outline: none;
+}
+
+, a.button:disabled {
+  color: var(--theme-text-label);
+  cursor: not-allowed;
+  pointer-events: all;
+}
+
+.button.active {
+	border-image: conic-gradient(from 0deg, aqua, aquamarine, lime, aqua) 1;
+	animation: 1.5s rotate linear infinite;
+}
+
+.button--toggle:active, .button--toggle:focus {
+  border: 2px solid var(--theme-input);
+}
+
+.button-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: var(--gutter);
+}
+
+.button-group .button:not(:first-child) {
+  margin-left: var(--gutter);
+}

@@ -1,0 +1,126 @@
+/* I'd love to setup scss and make it fully modular but really can't be fucked so you're getting a shame file with most of the code in it */
+.container--mid {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.wrapper-main {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 100rem;
+  width: auto;
+  padding-right: var(--gutter);
+}
+
+.map {
+  margin-top: var(--gutter);
+}
+
+.wrapper-aside {
+  flex: 1 0 44rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  min-width: 44rem;
+  width: auto;
+  padding-left: var(--gutter);
+}
+
+.wrapper-aside > label {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.wrapper-aside label {
+  margin: 0;
+}
+
+.wrapper-aside .label-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.multi-out {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+}
+
+.leaflet-marker-icon[src*="./images/pokeball.png"] {
+  filter: invert(19%) sepia(73%) saturate(4968%) hue-rotate(351deg) brightness(92%) contrast(105%);
+  z-index: 999;
+}
+
+.leaflet-marker-icon[src*="./images/dot.png"] {
+  filter: invert(93%) sepia(9%) saturate(977%) hue-rotate(49deg) brightness(103%) contrast(87%);
+}
+
+code {
+  position: relative;
+  width: 100%;
+}
+
+code.active::after {
+  content: "";
+  background-color: var(--theme-bg);
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="60px" height="60px"><path d="M 15 3 C 8.3845336 3 3 8.3845336 3 15 C 3 21.615466 8.3845336 27 15 27 C 21.615466 27 27 21.615466 27 15 C 27 8.3845336 21.615466 3 15 3 z M 15 12 C 16.668699 12 18 13.331301 18 15 C 18 16.668699 16.668699 18 15 18 C 13.331301 18 12 16.668699 12 15 C 12 13.331301 13.331301 12 15 12 z M 15 14 A 1 1 0 0 0 14 15 A 1 1 0 0 0 15 16 A 1 1 0 0 0 16 15 A 1 1 0 0 0 15 14 z M 5 15 L 10 15 C 10 17.749579 12.250421 20 15 20 C 17.749579 20 20 17.749579 20 15 L 25 15 C 25 20.534534 20.534534 25 15 25 C 9.4654664 25 5 20.534534 5 15 z"/></svg>');
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  padding: 1rem;
+  height: 2.2rem;
+  width: 2.2rem;
+  position: absolute;
+  top: 0;
+  left: -7.5px;
+  animation: 0.5s spinner linear infinite;
+}
+
+.master-loc {
+  cursor: pointer;
+}
+
+.code-accord {
+  display: none;
+}
+
+.master-loc.open .code-accord {
+  display: block;
+}
+
+.info-loc {
+  position: relative;
+  white-space: break-spaces;
+}
+
+.info-loc::after {
+  content: "";
+  font-size: 0;
+  border: 1rem solid transparent;
+  border-left: 1.6rem solid var(--theme-text);
+  padding: 0;
+  margin: 0;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+
+.master-loc.open .info-loc::after {
+  border: 1rem solid transparent;
+  border-bottom: 1.6rem solid var(--theme-text);
+  left: -6px;
+  top: -10px;
+}
