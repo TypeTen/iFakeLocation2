@@ -43,11 +43,6 @@ I wrote the additions to iFakeLocation for this; you're probably using it for th
 <sub>If you really want it tremendously smooth, go for it, but keep in mind it's going to take longer to generate each path.</sub>
 * You're already cheating, have some patience.
 
-### Potter About
-
-* Toggling this option on will just walk your GPS around randomly in a short range near to your selected area.
-* Each 'walk' is completely random and so you could end up being exactly where you started after an hour, or you could be an hours walk from your position in exactly one direction.
-
 ## How to install my extra features:
 
 * [Go to the main repo page and download your selected version of the app and unzip it](https://github.com/master131/iFakeLocation/releases)
