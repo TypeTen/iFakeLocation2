@@ -1,4 +1,69 @@
-# iFakeLocation
+# iFakeLocation functionality+
+
+This is a fork of the original iFakeLocation that I plan to update with the ability to connect to your phone over wi-fi, but I now have a child so I'll stick to what I can do quick and fast: FE Web Dev.
+The only differences in this repo to the original is the .html and .css files relating to the Front End you'll be interacting with as a user. Hence, I'm not going to recompile master131's work and take any clicks from them. Go to their repo to get the app, come to mine to get the extended functionality such as:
+
+- [x] Route plotting and walking
+- [x] Random walking starting from a chosen point
+- [x] Controllable move speed and update rate
+- [ ] Saving and loading routes
+- [ ] Connecting to mobile device over wi-fi
+
+In the new front end I've updated the About modal with some more info for you that I'll repeat here so that you have no excuses.
+
+I didn't write this for anyone but myself. I didn't want to pay some shmuck with a crap track record (not gonna throw shade here, but the app's antonym name is youYourLandline and others that look like it are all rebranded apps by the same gonk) for an auto walker with really basic functionality, so I just used Smartlad master131's cracking work to laboriously teleport up and down my road to catch monsters of the pocket variety. Upon getting fed up of that, I looked into how it was moving me and found it controlled by js, so I just added in some functionality I'd like to have. I then began working on refarctoring all the code and got burned out so I scrapped most of it and now it's your spaghetti to adopt.
+
+Don't *consider* this a warning, it **is** a warning. I couldn't give any less of a shit what you consider it. I will take no responsibility for your actions and will continue to.
+# If you use this for Walking Games, you stand the chance of being banned. Like with all tools. The only difference is, this is free and still has the main feature you need: an auto walker that allows you to plot a route without leaving your computer/laptop.
+
+### Route Plotting
+
+* Toggle the 'Off' button in the Route Plotting section to the right of the map, the button will highlight
+* Double click in multiple places on the map
+* Each double click will add a route destination and the last point will circle back to the first point placed
+* Once your route is entirely mapped out, click the 'Start Walking Route' button under the map
+**THE ROUTE PLOTTING IS QUITE HEAVY ON THE JS, MAKE SURE YOU'RE ZOOMED IN ON YOUR CHOSEN LOCATION AND NOT TRYING TO WALK ACROSS THE ENTIRETY OF A CONTINENT. I HAVE WROTE NO SAFETIES INTO MY ADDITIONS TO STOP YOU FROM NUKING YOUR BROWSER.**
+
+There is no pause/play feature. If you want to stop at a place, then plot a route there then click 'Stop Walking Route'; it'll move the user icon back to the first plot point, but it won't move your mobile device back. This is a quirk I've literally just noticed as I wrote this, so it might be fixed one day when I get back around to this.
+
+### Potter About
+
+* Toggling this option on will just walk your GPS around randomly in a short range near to your selected area.
+* Each 'walk' is completely random and so you could end up being exactly where you started after an hour, or you could be an hours walk from your position in exactly one direction.
+
+### Use in Walking Games
+
+I wrote the additions to iFakeLocation for this; you're probably using it for this. These are some tips to help you suck less at being a cheater:
+
+* If you want to avoid bans in these types of games, set your starting point to your phsyical location.
+* If you use it to teleport, make sure your Walking Game is off for an adequate amount of time for you to get that far were you to travel to it from the last place you played the game logged in at.
+* **Basically: don't actually teleport as far as the game is concerned.**
+* If you want to move faster than 5m/s then you'll probably be in for a bad time. The move speed is set to a default of 3 and a bit metre/s, which is still a really good clip.
+* Smoothing is just how many times the app will send a GPS spoof to your device. 2 = twice per second and twice per your metres/s setting.
+<sub>If you really want it tremendously smooth, go for it, but keep in mind it's going to take longer to generate each path.</sub>
+* You're already cheating, have some patience.
+
+### Potter About
+
+* Toggling this option on will just walk your GPS around randomly in a short range near to your selected area.
+* Each 'walk' is completely random and so you could end up being exactly where you started after an hour, or you could be an hours walk from your position in exactly one direction.
+
+## How to install my extra features:
+
+* [Go to the main repo page and download your selected version of the app and unzip it](https://github.com/master131/iFakeLocation/releases)
+* Then grab the [release in my repo](https://github.com/TypeTen/iFakeLocation2/releases) (the files aren't OS specific like master131's), unzip the folder, and drop it into the iFakeLocation download you got from the first link.
+* That should prompt you to replace the files, replace all of them. Don't make copies, don't skip, just replace all. All the code is in this repo, scrutinise it if you're worried I'm some dodgy geezer.
+* Launch iFakeLocation and you'll have the extended functionality
+
+Done. If it's broken, doesn't work, or hasn't changed anything, then either:
+* you've done it wrong (highest likelyhood)
+* master131's updated his repo and made some changes that means my code no longer does the right stuff (good likelyhood)
+<sub>if you suspect that is the case, this was written on [version 1.70](https://github.com/master131/iFakeLocation/releases/tag/v1.7.0) of master131's code, use that as your base</sub>
+* I've done something wrong (also probably a really good likelyhood, but please exhaust the other options before you message me or submit an issue)
+
+While we're on the topic of issues and merge requests, I don't know how often I'll check this repo but feel free make pull requests with fixes or whatever you want. Also feel free to make requests. I'll probably ignore them, though, so don't waste too much of your time making them.
+
+# Original iFakeLocation readme as of 1.17 (which comes after 1.70, whodathunk)
 
 ![](https://i.imgur.com/ELFifkA.png)
 
