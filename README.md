@@ -11,7 +11,7 @@ The only differences in this repo to the original is the .html and .css files re
 
 In the new front end I've updated the About modal with some more info for you that I'll repeat here so that you have no excuses.
 
-I didn't write this for anyone but myself. I didn't want to pay some shmuck with a crap track record (not gonna throw shade here, but the app's antonym name is youYourLandline and others that look like it are all rebranded apps by the same gonk) for an auto walker with really basic functionality, so I just used Smartlad master131's cracking work to laboriously teleport up and down my road to catch monsters of the pocket variety. Upon getting fed up of that, I looked into how it was moving me and found it controlled by js, so I just added in some functionality I'd like to have. I then began working on refarctoring all the code and got burned out so I scrapped most of it and now it's your spaghetti to adopt.
+I didn't write this for anyone but myself. I didn't want to pay some shmuck with a crap track record (not gonna throw shade here, but the app's antonym name is youYourLandline and others that look like it are all rebranded apps by the same gonk) for an auto walker with really basic functionality, so I just used Smartlad master131's cracking work to laboriously teleport up and down my road to catch monsters of the pocket variety. Upon getting fed up of that, I looked into how it was moving me and found it controlled by js, so I just added in some functionality I'd like to have. I then began working on refactoring all the code and got burned out so I scrapped most of it and now it's your spaghetti to adopt.
 
 Don't *consider* this a warning, it **is** a warning. I couldn't give any less of a shit what you consider it. I will take no responsibility for your actions and will continue not to.
 # If you use this for Walking Games, you stand the chance of being banned. Like with all tools. The only difference is, this is free and still has the main feature you need: an auto walker that allows you to plot a route without leaving your computer/laptop.
@@ -43,11 +43,6 @@ I wrote the additions to iFakeLocation for this; you're probably using it for th
 <sub>If you really want it tremendously smooth, go for it, but keep in mind it's going to take longer to generate each path.</sub>
 * You're already cheating, have some patience.
 
-### Potter About
-
-* Toggling this option on will just walk your GPS around randomly in a short range near to your selected area.
-* Each 'walk' is completely random and so you could end up being exactly where you started after an hour, or you could be an hours walk from your position in exactly one direction.
-
 ## How to install my extra features:
 
 * [Go to the main repo page and download your selected version of the app and unzip it](https://github.com/master131/iFakeLocation/releases)
@@ -63,7 +58,9 @@ Done. If it's broken, doesn't work, or hasn't changed anything, then either:
 
 While we're on the topic of issues and merge requests, I don't know how often I'll check this repo but feel free make pull requests with fixes or whatever you want. Also feel free to make requests. I'll probably ignore them, though, so don't waste too much of your time making them.
 
-# Original iFakeLocation readme as of 1.17 (which comes after 1.70, whodathunk)
+If there's any butchered prose or language in this readme, blame my 3 month old for allowing me the kingly 3 hours of sleep I've had each night this week.
+
+# Original iFakeLocation readme as of 1.70
 
 ![](https://i.imgur.com/ELFifkA.png)
 
