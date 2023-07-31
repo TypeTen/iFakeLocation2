@@ -63,7 +63,7 @@ Done. If it's broken, doesn't work, or hasn't changed anything, then either:
 
 While we're on the topic of issues and merge requests, I don't know how often I'll check this repo but feel free make pull requests with fixes or whatever you want. Also feel free to make requests. I'll probably ignore them, though, so don't waste too much of your time making them.
 
-# Original iFakeLocation readme as of 1.17 (which comes after 1.70, whodathunk)
+# Original iFakeLocation readme as of 1.70
 
 ![](https://i.imgur.com/ELFifkA.png)
 
