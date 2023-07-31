@@ -24,7 +24,7 @@ Don't *consider* this a warning, it **is** a warning. I couldn't give any less o
 * Once your route is entirely mapped out, click the 'Start Walking Route' button under the map
 **THE ROUTE PLOTTING IS QUITE HEAVY ON THE JS, MAKE SURE YOU'RE ZOOMED IN ON YOUR CHOSEN LOCATION AND NOT TRYING TO WALK ACROSS THE ENTIRETY OF A CONTINENT. I HAVE WROTE NO SAFETIES INTO MY ADDITIONS TO STOP YOU FROM NUKING YOUR BROWSER.**
 
-There is no pause/play feature. If you want to stop at a place, then plot a route there then click 'Stop Walking Route'; it'll move the user icon back to the first plot point, but it won't move your mobile device back. This is a quirk I've literally just noticed as I wrote this, so it might be fixed one day when I get back around to this.
+There is no pause/play feature. If you want to stop at a place, then plot a route there then click 'Stop Walking Route' when you get to it; clicking the button will move the user icon back to the first plot point, but it won't actually move your mobile device back so don't worry. This is a quirk I've literally just noticed as I wrote this, so it might be fixed one day when I get back around to this.
 
 ### Potter About
 
