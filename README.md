@@ -13,7 +13,7 @@ In the new front end I've updated the About modal with some more info for you th
 
 I didn't write this for anyone but myself. I didn't want to pay some shmuck with a crap track record (not gonna throw shade here, but the app's antonym name is youYourLandline and others that look like it are all rebranded apps by the same gonk) for an auto walker with really basic functionality, so I just used Smartlad master131's cracking work to laboriously teleport up and down my road to catch monsters of the pocket variety. Upon getting fed up of that, I looked into how it was moving me and found it controlled by js, so I just added in some functionality I'd like to have. I then began working on refarctoring all the code and got burned out so I scrapped most of it and now it's your spaghetti to adopt.
 
-Don't *consider* this a warning, it **is** a warning. I couldn't give any less of a shit what you consider it. I will take no responsibility for your actions and will continue to.
+Don't *consider* this a warning, it **is** a warning. I couldn't give any less of a shit what you consider it. I will take no responsibility for your actions and will continue not to.
 # If you use this for Walking Games, you stand the chance of being banned. Like with all tools. The only difference is, this is free and still has the main feature you need: an auto walker that allows you to plot a route without leaving your computer/laptop.
 
 ### Route Plotting
